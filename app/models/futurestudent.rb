@@ -1,0 +1,2 @@
+class Futurestudent < ApplicationRecord
+end

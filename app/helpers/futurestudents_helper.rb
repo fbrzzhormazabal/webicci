@@ -1,0 +1,2 @@
+module FuturestudentsHelper
+end
