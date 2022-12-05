@@ -10,7 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_04_194258) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_05_014457) do
+  create_table "futurestudents", force: :cascade do |t|
+    t.string "Name"
+    t.string "Mother_Name"
+    t.string "Father_Name"
+    t.string "Email"
+    t.integer "Run"
+    t.integer "Dv"
+    t.date "Birthday"
+    t.date "Deleted_At"
+    t.string "Password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "guests", force: :cascade do |t|
+    t.string "Name"
+    t.string "Email"
+    t.integer "Run"
+    t.integer "Dv"
+    t.date "Deleted_At"
+    t.string "Password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "Name"
     t.string "Mother_Name"
@@ -23,6 +48,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_04_194258) do
     t.date "Year_Ingre"
     t.date "Deleted_At"
     t.string "Password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "Name"
+    t.string "Mother_Name"
+    t.string "Father_Name"
+    t.string "Email"
+    t.integer "Run"
+    t.integer "Dv"
+    t.date "Birthday"
+    t.date "Deleted_At"
+    t.string "Password"
+    t.date "Year_Ingreso"
+    t.date "Year_Egreso"
+    t.date "Year_Teacher"
+    t.integer "Telefono"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
