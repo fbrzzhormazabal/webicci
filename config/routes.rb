@@ -3,9 +3,18 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/bienvenida", to: "inicio#index"
+  
 
+  get "/bienvenida", to: "inicio#index"
+  
   get "students/new", to:"students#new"
+  get "students/:id", to:"students#show"
+  get "students/:id/edit", to:"students#edit"
+  
+  patch "students/:id", to:"students#update", as: :student
+  
   post "students", to:"students#create"
+
+  delete "students/:id", to:"students#destroy"
 
 end
