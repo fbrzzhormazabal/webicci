@@ -6,15 +6,19 @@ Rails.application.routes.draw do
   
 
   get "/bienvenida", to: "inicio#index"
-  
+  #student CRUD
   get "students/new", to:"students#new"
   get "students/:id", to:"students#show"
-  get "students/:id/edit", to:"students#edit"
-  
-  patch "students/:id", to:"students#update", as: :student
-  
+  get "students/:id/edit", to:"students#edit" 
+  patch "students/:id", to:"students#update", as: :student  
   post "students", to:"students#create"
-
   delete "students/:id", to:"students#destroy"
+  #Futurestudent CRUD
+  get "futurestudents/new", to:"futurestudents#new"
+  get "futurestudents/:id", to:"futurestudents#show"
+  get "futurestudents/:id/edit", to:"futurestudents#edit" 
+  patch "futurestudents/:id", to:"futurestudents#update", as: :futurestudent  
+  post "futurestudents", to:"futurestudents#create"
+  delete "futurestudents/:id", to:"futurestudents#destroy"
 
 end

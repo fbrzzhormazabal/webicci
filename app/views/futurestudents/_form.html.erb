@@ -1,0 +1,40 @@
+<%= form_with(model: @futurestudent, local: true) do |form| %>
+
+    <div>
+    <%= form.label :Name %>
+    <%= form.text_field :Name %>
+    </div>
+    <div>
+    <%= form.label :Mother_Name %>
+    <%= form.text_field :Mother_Name %>
+    </div>
+    <div>
+    <%= form.label :Father_Name %>
+    <%= form.text_field :Father_Name %>
+    </div>
+    <div>
+    <%= form.label :Email %>
+    <%= form.text_field :Email %>
+    </div>
+    <div>
+    <%= form.label :Run %>
+    <%= form.text_field :Run %>
+    </div>
+    <div>
+    <%= form.label :Dv %>
+    <%= form.text_field :Dv %>
+    </div>
+    <div>
+    <%= form.label :Birthday %>
+    <%= form.text_field :Birthday %>
+    </div>
+    <div>
+    <%= form.label :Password %>
+    <%= form.text_field :Password %>
+    </div>
+        
+    <div>
+    <%= form.submit %>
+    </div>
+
+<%end%>
