@@ -20,5 +20,12 @@ Rails.application.routes.draw do
   patch "futurestudents/:id", to:"futurestudents#update", as: :futurestudent  
   post "futurestudents", to:"futurestudents#create"
   delete "futurestudents/:id", to:"futurestudents#destroy"
+  #teacher CRUD
+  get "teachers/new", to:"teachers#new"
+  get "teachers/:id", to:"teachers#show"
+  get "teachers/:id/edit", to:"teachers#edit" 
+  patch "teachers/:id", to:"teachers#update", as: :teacher  
+  post "teachers", to:"teachers#create"
+  delete "teachers/:id", to:"teachers#destroy"
 
 end
