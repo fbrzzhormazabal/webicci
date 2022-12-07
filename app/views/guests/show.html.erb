@@ -1,0 +1,17 @@
+<h1><%= @guest.Name%></h1>
+<div>
+<%= @guest.Email%>
+</div>
+<div>
+<%= @guest.Run%>
+</div>
+<div>
+<%= @guest.Dv%>
+</div>
+<div>
+<%= @guest.Password%>
+</div>
+
+<div>
+    <%=link_to "Eliminar el Invitado", @guest, method: :delete%>
+</div>

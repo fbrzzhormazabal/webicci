@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  
+  root "inicio#index"
 
   get "/bienvenida", to: "inicio#index"
   #student CRUD
@@ -27,5 +27,12 @@ Rails.application.routes.draw do
   patch "teachers/:id", to:"teachers#update", as: :teacher  
   post "teachers", to:"teachers#create"
   delete "teachers/:id", to:"teachers#destroy"
+  #guest CRUD
+  get "guests/new", to:"guests#new"
+  get "guests/:id", to:"guests#show"
+  get "guests/:id/edit", to:"guests#edit" 
+  patch "guests/:id", to:"guests#update", as: :guest  
+  post "guests", to:"guests#create"
+  delete "guests/:id", to:"guests#destroy"
 
 end
