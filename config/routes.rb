@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get "/bienvenida", to: "inicio#index"
   #student CRUD
+  get "students", to:"students#index"
   get "students/new", to:"students#new"
   get "students/:id", to:"students#show"
   get "students/:id/edit", to:"students#edit" 
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   post "students", to:"students#create"
   delete "students/:id", to:"students#destroy"
   #Futurestudent CRUD
+  get "futurestudents", to:"futurestudents#index"
   get "futurestudents/new", to:"futurestudents#new"
   get "futurestudents/:id", to:"futurestudents#show"
   get "futurestudents/:id/edit", to:"futurestudents#edit" 
@@ -21,6 +23,7 @@ Rails.application.routes.draw do
   post "futurestudents", to:"futurestudents#create"
   delete "futurestudents/:id", to:"futurestudents#destroy"
   #teacher CRUD
+  get "teachers", to:"teachers#index"
   get "teachers/new", to:"teachers#new"
   get "teachers/:id", to:"teachers#show"
   get "teachers/:id/edit", to:"teachers#edit" 
@@ -28,6 +31,7 @@ Rails.application.routes.draw do
   post "teachers", to:"teachers#create"
   delete "teachers/:id", to:"teachers#destroy"
   #guest CRUD
+  get "guests", to:"guests#index"
   get "guests/new", to:"guests#new"
   get "guests/:id", to:"guests#show"
   get "guests/:id/edit", to:"guests#edit" 

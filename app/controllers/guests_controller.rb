@@ -1,6 +1,10 @@
 class GuestsController < ApplicationController
-    before_action :find_guest, except: [:new,:create]
+    before_action :find_guest, except: [:new,:create,:index]
 
+    def index
+        @guests = Guest.all
+    end
+    
     def new
         @guest = Guest.new        
     end

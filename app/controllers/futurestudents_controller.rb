@@ -1,5 +1,9 @@
 class FuturestudentsController < ApplicationController
-    before_action :find_futurestudent, except: [:new,:create]
+    before_action :find_futurestudent, except: [:new,:create,:index]
+
+    def index
+        @futurestudents = Futurestudent.all
+    end
 
     def new
         @futurestudent = Futurestudent.new        

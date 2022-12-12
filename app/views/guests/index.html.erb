@@ -1,0 +1,12 @@
+<h1>Invitados en la base de datos</h1>
+
+<% @guests.each do |guest| %>
+
+    <div>
+        <%=guest.Name%>
+        <%=guest.Email%>
+        <%=guest.Run%>
+        <%=guest.Dv%>
+    </div>
+
+<%end%>

@@ -1,5 +1,9 @@
 class TeachersController < ApplicationController
-    before_action :find_teacher, except: [:new,:create]
+    before_action :find_teacher, except: [:new,:create,:index]
+
+    def index
+        @teachers = Teacher.all        
+    end
 
     def new
         @teacher = Teacher.new        
