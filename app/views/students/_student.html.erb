@@ -1,8 +1,9 @@
-
-<div>
-    <%=student.Name%>
-    <%=student.Mother_Name%>
-    <%=student.Father_Name%>
-    <%=student.Email%>
+<div class="card" style="padding:15px;max-width:300px;margin-top:len">
+    <h3 class="text-uppercase">
+        <%=student.Name%>
+        <%=student.Mother_Name%>
+        <%=student.Father_Name%>
+    </h3>
+    <p class="text-secondary"><%=student.Email%></p>
     <%= link_to "Ver Mas", student %>
 </div>
