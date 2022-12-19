@@ -1,7 +1,7 @@
 <body>
   <div id="header">
     <ul class="nav">
-      <% nav_links = [        ["Inicio", "#"],
+      <% nav_links = [        ["Inicio", "bienvenida"],
         ["Carrera", "#", [          ["Malla Curricular", "#"],
           ["Salas Para Nuestro Uso", "#"]
         ]],
@@ -13,6 +13,10 @@
         ["Login", "#", [          ["Login de Estudiante", "#"],
           ["Login de Futuro Estudiante", "#"],
           ["Login de Invitado", "#"]
+        ]],
+        ["Singup", "#", [          ["Singup de Estudiante", "students/new"],
+          ["Singup de Futuro Estudiante", "futurestudents/new"],
+          ["Singup de Invitado", "guests/new"]
         ]]
       ] %>
       <% nav_links.each do |link| %>
