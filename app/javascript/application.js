@@ -4,3 +4,7 @@ import "controllers"
 
 import 'bootstrap'
 import "css/styles"
+
+//= require jquery3
+//= require popper
+//= require bootstrap

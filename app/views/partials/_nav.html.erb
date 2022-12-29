@@ -1,36 +1,53 @@
-<body>
-  <div id="header">
-    <ul class="nav">
-      <% nav_links = [        ["Inicio", "bienvenida"],
-        ["Carrera", "#", [          ["Malla Curricular", "#"],
-          ["Salas Para Nuestro Uso", "#"]
-        ]],
-        ["Profesores", "#", [          ["Quienes Son", "#"],
-          ["Sus Publicaciones", "#"]
-        ]],
-        ["Repositiorios", "https://github.com/fbrzzhormazabal/webicci"],
-        ["Discord", "#"],
-        ["Login", "#", [          ["Login de Estudiante", "#"],
-          ["Login de Futuro Estudiante", "#"],
-          ["Login de Invitado", "#"]
-        ]],
-        ["Singup", "#", [          ["Singup de Estudiante", "students/new"],
-          ["Singup de Futuro Estudiante", "futurestudents/new"],
-          ["Singup de Invitado", "guests/new"]
-        ]]
-      ] %>
-      <% nav_links.each do |link| %>
-        <li>
-          <a href="<%= link[1] %>"><%= link[0] %></a>
-          <% if link[2] %>
-            <ul>
-              <% link[2].each do |sub_link| %>
-                <li><a href="<%= sub_link[1] %>"><%= sub_link[0] %></a></li>
-              <% end %>
-            </ul>
-          <% end %>
-        </li>
-      <% end %>
+<ul class="nav nav-tabs">
+
+  <li class="nav-item">
+    <a class="nav-link" href="root">Inicio</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Carrera</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Malla Curricular</a></li>
+      <li><a class="dropdown-item" href="#">Salas para nuestro usos</a></li>
     </ul>
-  </div>
-</body>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/teachers" role="button" aria-expanded="false">Profesores</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">¿Quienes Son?</a></li>
+      <li><a class="dropdown-item" href="#">Sus Publicaciones</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/fbrzzhormazabal/webicci">Respositorio de Carrera</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="https://discord.com">Discord de la carrera</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Login</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Login de Estudiante</a></li>
+      <li><a class="dropdown-item" href="#">Login de Futuro Estudiante</a></li>
+      <li><a class="dropdown-item" href="#">Login de Invitado</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Login de Profesor</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Registro</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Registro de Estudiante</a></li>
+      <li><a class="dropdown-item" href="#">Registro de Futuro Estudiante</a></li>
+      <li><a class="dropdown-item" href="#">Registro de Invitado</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Registro de Profesor</a></li>
+    </ul>
+  </li>
+
+</ul>
