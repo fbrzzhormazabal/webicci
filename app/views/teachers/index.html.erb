@@ -1,20 +1,3 @@
 <h1>Profesores en la base de datos</h1>
 
-<% @teachers.each do |teacher| %>
-
-    <div>
-        <%=teacher.Name%>
-        <%=teacher.Mother_Name%>
-        <%=teacher.Father_Name%>
-        <%=teacher.Email%>
-        <%=teacher.Run%>
-        <%=teacher.Dv%>
-        <%=teacher.Birthday%>
-        <%=teacher.Year_Ingreso%>
-        <%=teacher.Year_Egreso%>
-        <%=teacher.Year_Teacher%>
-        <%=teacher.Telefono%>
-
-    </div>
-
-<%end%>
+    <%=render @teachers%>

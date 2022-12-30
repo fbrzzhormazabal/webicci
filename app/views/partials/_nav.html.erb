@@ -1,7 +1,7 @@
 <ul class="nav nav-tabs">
 
   <li class="nav-item">
-    <a class="nav-link" href="root">Inicio</a>
+    <a class="nav-link" href="/bienvenida">Inicio</a>
   </li>
 
   <li class="nav-item dropdown">
@@ -15,7 +15,7 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/teachers" role="button" aria-expanded="false">Profesores</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">¿Quienes Son?</a></li>
+      <li><a class="dropdown-item" href="/teachers">¿Quienes Son?</a></li>
       <li><a class="dropdown-item" href="#">Sus Publicaciones</a></li>
     </ul>
   </li>
@@ -42,11 +42,20 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Registro</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Registro de Estudiante</a></li>
-      <li><a class="dropdown-item" href="#">Registro de Futuro Estudiante</a></li>
-      <li><a class="dropdown-item" href="#">Registro de Invitado</a></li>
+      <li><a class="dropdown-item" href="/students/new">Registro de Estudiante</a></li>
+      <li><a class="dropdown-item" href="/futurestudents/new">Registro de Futuro Estudiante</a></li>
+      <li><a class="dropdown-item" href="/guests/new">Registro de Invitado</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Registro de Profesor</a></li>
+      <li><a class="dropdown-item" href="/teachers/new">Registro de Profesor</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mostrar en la BD</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/students">Busqueda de Estudiante</a></li>
+      <li><a class="dropdown-item" href="/futurestudents">Busqueda de Futuro Estudiante</a></li>
+      <li><a class="dropdown-item" href="/guests">Busqueda de Invitado</a></li>
     </ul>
   </li>
 

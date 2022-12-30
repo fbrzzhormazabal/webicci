@@ -1,15 +1,3 @@
 <h1>Futuros Estudiantes en la base de datos</h1>
 
-<% @futurestudents.each do |futurestudent| %>
-
-    <div>
-        <%=futurestudent.Name%>
-        <%=futurestudent.Mother_Name%>
-        <%=futurestudent.Father_Name%>
-        <%=futurestudent.Email%>
-        <%=futurestudent.Run%>
-        <%=futurestudent.Dv%>
-        <%=futurestudent.Birthday%> 
-    </div>
-
-<%end%>
+    <%=render @futurestudents%>
