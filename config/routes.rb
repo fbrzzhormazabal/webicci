@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root "inicio#index"
 
   get "/bienvenida", to: "inicio#index"
+  get "/mallas", to: "mallas#index"
+  get "/salas", to: "salas#index"
   #student CRUD
   get "students", to:"students#index"
   get "students/new", to:"students#new"

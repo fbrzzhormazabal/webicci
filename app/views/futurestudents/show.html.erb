@@ -1,26 +1,20 @@
-<h1><%= @futurestudent.Name%></h1>
-<div>
-<%= @futurestudent.Mother_Name%>
-</div>
-<div>
-<%= @futurestudent.Father_Name%>
-</div>
-<div>
-<%= @futurestudent.Email%>
-</div>
-<div>
-<%= @futurestudent.Run%>
-</div>
-<div>
-<%= @futurestudent.Dv%>
-</div>
-<div>
-<%= @futurestudent.Birthday%>
-</div>
-<div>
-<%= @futurestudent.Password%>
+<div
+  class="bg-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Frontis_UNAP_Iquique.JPG/1280px-Frontis_UNAP_Iquique.JPG');height: 100vh;">
+    <div class="card mx-auto" style="padding:15px;max-width:300px;margin-top:len">
+    <h3>Nombre del futuro estudiante: </h3>
+    <h3 class="text-uppercase">
+        <%=@futurestudent.Name%>
+        <%=@futurestudent.Father_Name%>
+        <%=@futurestudent.Mother_Name%>     
+    </h3>
+    <img src="https://www.fundaciocaixaltea.com/wp-content/uploads/2018/01/default-profile.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">Imagen del Futuro Estudiante</p>
+    </div>
+    <p class="text-secondary">Email del futuro estudiante: <%=@futurestudent.Email%></p>
+    <p class="text-secondary">RUT del futuro estudiante: <%=@futurestudent.Run%>-<%=@futurestudent.Dv%></p>
+    </div>
+    <div class="card" style="width: 18rem;">
 </div>
 
-<div>
-    <%=link_to "Eliminar el Futuro Estudiante", @futurestudent, method: :delete%>
 </div>

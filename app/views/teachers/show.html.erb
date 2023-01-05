@@ -1,38 +1,23 @@
-<h1><%= @teacher.Name%></h1>
-<div>
-<%= @teacher.Mother_Name%>
-</div>
-<div>
-<%= @teacher.Father_Name%>
-</div>
-<div>
-<%= @teacher.Email%>
-</div>
-<div>
-<%= @teacher.Run%>
-</div>
-<div>
-<%= @teacher.Dv%>
-</div>
-<div>
-<%= @teacher.Telefono%>
-</div>
-<div>
-<%= @teacher.Birthday%>
-</div>
-<div>
-<%= @teacher.Year_Ingreso%>
-</div>
-<div>
-<%= @teacher.Year_Egreso%>
-</div>
-<div>
-<%= @teacher.Year_Teacher%>
-</div>
-<div>
-<%= @teacher.Password%>
+<div
+  class="bg-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Frontis_UNAP_Iquique.JPG/1280px-Frontis_UNAP_Iquique.JPG');height: 100vh;">
+    <div class="card mx-auto" style="padding:15px;max-width:300px;margin-top:len">
+    <h3 class="text-uppercase">
+        <%=@teacher.Name%>
+        <%=@teacher.Father_Name%>
+        <%=@teacher.Mother_Name%>     
+    </h3>
+    <img src="https://www.fundaciocaixaltea.com/wp-content/uploads/2018/01/default-profile.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">Imagen del Profesor</p>
+    </div>
+    <p class="text-secondary">Rut del profesor: <%=@teacher.Run%>-<%=@teacher.Dv%></p>
+    <p class="text-secondary">Telefono del profesor: <%=@teacher.Telefono%></p>
+    <p class="text-secondary">Fecha de naciemiento del profesor: <%=@teacher.Birthday%></p>
+    <p class="text-secondary">Año de ingreso a la carrera: <%=@teacher.Year_Ingreso%></p>
+    <p class="text-secondary">Año de egreso de la carrear: <%=@teacher.Year_Egreso%></p>
+    <p class="text-secondary">Año que ingreso como profesor: <%=@teacher.Year_Teacher%></p>
+    <p class="text-secondary">Email del profesor: <%=@teacher.Email%></p>
+    <div class="card" style="width: 18rem;">
+  </div>
 </div>
 
-<div>
-    <%=link_to "Eliminar el Profesor", @teacher, method: :delete%>
-</div>

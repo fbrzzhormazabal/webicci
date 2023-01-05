@@ -1,17 +1,18 @@
-<h1><%= @guest.Name%></h1>
-<div>
-<%= @guest.Email%>
-</div>
-<div>
-<%= @guest.Run%>
-</div>
-<div>
-<%= @guest.Dv%>
-</div>
-<div>
-<%= @guest.Password%>
-</div>
 
-<div>
-    <%=link_to "Eliminar el Invitado", @guest, method: :delete%>
+<div
+  class="bg-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Frontis_UNAP_Iquique.JPG/1280px-Frontis_UNAP_Iquique.JPG');height: 100vh;">
+    <div class="card mx-auto" style="padding:15px;max-width:300px;margin-top:len">
+    <h3>Nombre del Invitado: </h3>
+    <h3 class="text-uppercase">
+        <%=@guest.Name%>
+        <%=@guest.Run%>-<%=@guest.Dv%>     
+    </h3>
+    <img src="https://www.fundaciocaixaltea.com/wp-content/uploads/2018/01/default-profile.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">Imagen del Invitado</p>
+    </div>
+    <p class="text-secondary">Email del invitado: <%=@guest.Email%></p>
+    </div>
+    <div class="card" style="width: 18rem;">
+    </div>
 </div>
