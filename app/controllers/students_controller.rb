@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
     end
 
     def create
-        @student = Student.create(Name: params[:student][:Name],Mother_Name: params[:student][:Mother_Name],Father_Name: params[:student][:Father_Name],Email: params[:student][:Email],Run: params[:student][:Run],Dv: params[:student][:Dv],Telefono: params[:student][:Telefono],Birthday: params[:student][:Birthday],Year_Ingre: params[:student][:Year_Ingre],password_digest: params[:student][:password_digest],Password: params[:student][:Password])
+        @student = Student.create(Name: params[:student][:Name],Mother_Name: params[:student][:Mother_Name],Father_Name: params[:student][:Father_Name],Email: params[:student][:Email],Run: params[:student][:Run],Dv: params[:student][:Dv],Telefono: params[:student][:Telefono],Birthday: params[:student][:Birthday],Year_Ingre: params[:student][:Year_Ingre],Password: params[:student][:Password],password_digest: params[:student][:password_digest])
         if @student.save
             session[:student_id] = @student.id
             redirect_to root_path, notice: "Registrado correctamente"
@@ -26,7 +26,7 @@ class StudentsController < ApplicationController
     end
 
     def update      
-        @student.update(Name: params[:student][:Name],Mother_Name: params[:student][:Mother_Name],Father_Name: params[:student][:Father_Name],Email: params[:student][:Email],Run: params[:student][:Run],Dv: params[:student][:Dv],Telefono: params[:student][:Telefono],Birthday: params[:student][:Birthday],Year_Ingre: params[:student][:Year_Ingre],Password: params[:student][:Password])
+        @student.update(Name: params[:student][:Name],Mother_Name: params[:student][:Mother_Name],Father_Name: params[:student][:Father_Name],Email: params[:student][:Email],Run: params[:student][:Run],Dv: params[:student][:Dv],Telefono: params[:student][:Telefono],Birthday: params[:student][:Birthday],Year_Ingre: params[:student][:Year_Ingre])
         
         redirect_to @student
     end
