@@ -62,3 +62,8 @@ para poder abrir la pagina web se debe ejectuar el siguente comando
 ```
 rails server
 ```
+y con esto le damos la finalizacion a la instalacion basica de ruby on rails
+#### La aplicacion va funcionar en. http://localhost:3000.
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
