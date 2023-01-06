@@ -1,4 +1,6 @@
-# README
+# Instalacion de ruby on rails para el funcionamiento del repositorio.
+###Fabrizzio Hormazabal
+###webiici
 Pasos para hacer funcionar el repositorio.
 
 #1. Instalar Ruby
