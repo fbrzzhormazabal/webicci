@@ -1,9 +1,9 @@
 # Instalacion de ruby on rails para el funcionamiento del repositorio.
-###Fabrizzio Hormazabal
-###webiici
+### Fabrizzio Hormazabal
+### webiici
 Pasos para hacer funcionar el repositorio.
 
-#1. Instalar Ruby
+# 1. Instalar Ruby
 Descarga la última versión estable de Ruby desde el sitio web oficial de Ruby: https://rubyinstaller.org
 
 Haz doble clic en el archivo de instalación descargado y sigue las instrucciones para instalar Ruby en tu computadora.
@@ -18,7 +18,7 @@ ruby --version
 ```
 Con esta linea de comandos veremos si ruby esta correctamente instalado 
 
-#2. Instalar Ruby on rails y SQLite
+# 2. Instalar Ruby on rails y SQLite
 Para instalar ruby on rails tenemos que escribir en cmd lo siguente.
 
 ```
@@ -34,7 +34,7 @@ y verificar si esta correctamente instalado en cmd con.
 rails --version
 ```
 
-#3. Clonar el repositorio
+# 3. Clonar el repositorio
 Ahora debe clonar el repositorio para poder utilizarlo.
 
 debe ejecutar lo siguente en la terminal cmd, en su carpeta favorita.
@@ -42,7 +42,7 @@ debe ejecutar lo siguente en la terminal cmd, en su carpeta favorita.
 git clone git@github.com:fbrzzhormazabal/webicci.git
 ```
 
-#4. Entrar a el proyecto "webicci"
+# 4. Entrar a el proyecto "webicci"
 en la terminal cmd ejecutamos.
 
 ```
