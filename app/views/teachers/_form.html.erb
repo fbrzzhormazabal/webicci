@@ -1,56 +1,56 @@
 <%= form_with(model: @teacher, local: true) do |form| %>
 
-    <div>
-    <%= form.label :Name %>
-    <%= form.text_field :Name %>
+    <div class="mb-3">
+        <%= form.label :Name %>
+        <%= form.text_field :Name,class:"form-control" , placeholder:"Nombre del profesor"%>
     </div>
-    <div>
-    <%= form.label :Mother_Name %>
-    <%= form.text_field :Mother_Name %>
+    <div class="mb-3">
+        <%= form.label :Mother_Name %>
+        <%= form.text_field :Mother_Name,class:"form-control" , placeholder:"Apellido Materno"%>
     </div>
-    <div>
-    <%= form.label :Father_Name %>
-    <%= form.text_field :Father_Name %>
+    <div class="mb-3">
+        <%= form.label :Father_Name %>
+        <%= form.text_field :Father_Name,class:"form-control" , placeholder:"Apellido Paterno"%>
     </div>
-    <div>
-    <%= form.label :Email %>
-    <%= form.text_field :Email %>
+    <div class="mb-3">
+        <%= form.label :Email %>
+        <%= form.email_field :Email,class:"form-control" , placeholder:"ejemplo@unap.com"%>
     </div>
-    <div>
-    <%= form.label :Run %>
-    <%= form.text_field :Run %>
+    <div class="mb-3">
+        <%= form.label :Run %>
+        <%= form.number_field :Run,class:"form-control" , placeholder:"Run del profesor"%>
     </div>
-    <div>
-    <%= form.label :Dv %>
-    <%= form.text_field :Dv %>
+    <div class="mb-3">
+        <%= form.label :Dv %>
+        <%= form.number_field :Dv,class:"form-control", placeholder:"Ultimo digito del RUT" %>
     </div>
-    <div>
-    <%= form.label :Telefono %>
-    <%= form.text_field :Telefono %>
+    <div class="mb-3">
+        <%= form.label :Telefono %>
+        <%= form.telephone_field :Telefono,class:"form-control" , placeholder:"XXXXXXXX"%>
     </div>
-    <div>
-    <%= form.label :Birthday %>
-    <%= form.text_field :Birthday %>
+    <div class="mb-3">
+        <%= form.label :Birthday %>
+        <%= form.date_field :Birthday ,class:"form-control" , placeholder:"Dia/mes/año"%>
     </div>
-    <div>
-    <%= form.label :Year_Ingreso %>
-    <%= form.text_field :Year_Ingreso %>
+    <div class="mb-3">
+        <%= form.label :Year_Ingreso %>
+        <%= form.date_field :Year_Ingreso,class:"form-control" , placeholder:"Dia/mes/año"%>
     </div>
-    <div>
-    <%= form.label :Year_Egreso %>
-    <%= form.text_field :Year_Egreso %>
+    <div class="mb-3">
+        <%= form.label :Year_Egreso %>
+        <%= form.date_field :Year_Egreso,class:"form-control", placeholder:"Dia/mes/año"%>
     </div>
-    <div>
-    <%= form.label :Year_Teacher %>
-    <%= form.text_field :Year_Teacher %>
+    <div class="mb-3">
+        <%= form.label :Year_Teacher %>
+        <%= form.date_field :Year_Teacher,class:"form-control" , placeholder:"Dia/mes/año"%>
     </div>
-    <div>
-    <%= form.label :Password %>
-    <%= form.text_field :Password %>
+    <div class="mb-3">
+        <%= form.label :Password %>
+        <%= form.password_field :Password,class:"form-control" , placeholder:"Contraseña"%>
     </div>
         
-    <div>
-    <%= form.submit %>
+    <div class="mb-3">
+        <%= form.submit %>
     </div>
 
 <%end%>

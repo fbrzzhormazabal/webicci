@@ -1,27 +1,27 @@
 <%= form_with(model: @guest, local: true) do |form| %>
 
-    <div>
+    <div class="mb-3">
     <%= form.label :Name %>
-    <%= form.text_field :Name %>
+    <%= form.text_field :Name, class:"form-control" , placeholder:"Nombre del invitado" %>
     </div>
-    <div>
+    <div class="mb-3">
     <%= form.label :Email %>
-    <%= form.text_field :Email %>
+    <%= form.email_field :Email, class:"form-control" , placeholder:"Email del invitado" %>
     </div>
-    <div>
+    <div class="mb-3">
     <%= form.label :Run %>
-    <%= form.text_field :Run %>
+    <%= form.number_field :Run, class:"form-control" , placeholder:"Run del invitado" %>
     </div>
-    <div>
+    <div class="mb-3">
     <%= form.label :Dv %>
-    <%= form.text_field :Dv %>
+    <%= form.number_field :Dv, class:"form-control" , placeholder:"Ultimo digito del Run" %>
     </div>
-    <div>
+    <div class="mb-3">
     <%= form.label :Password %>
-    <%= form.text_field :Password %>
+    <%= form.password_field :Password, class:"form-control" , placeholder:"Contraseña" %>
     </div>
         
-    <div>
+    <div class="mb-3">
     <%= form.submit %>
     </div>
 
