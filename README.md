@@ -1,7 +1,5 @@
 # Instalacion de ruby on rails para el funcionamiento del repositorio.
-### Fabrizzio Hormazabal
-### webiici
-Pasos para hacer funcionar el repositorio.
+# Pasos para hacer funcionar el repositorio.
 
 # 1. Instalar Ruby
 Descarga la última versión estable de Ruby desde el sitio web oficial de Ruby: https://rubyinstaller.org
