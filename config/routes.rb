@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root "inicio#index"
 
   get "/bienvenida", to: "inicio#index"
+  delete "/logout", to:"sessions#destroy"
+
   get "/mallas", to: "mallas#index"
   get "/salas", to: "salas#index"
   #student CRUD
@@ -16,6 +18,8 @@ Rails.application.routes.draw do
   patch "students/:id", to:"students#update", as: :student  
   post "students", to:"students#create"
   delete "students/:id", to:"students#destroy"
+  get "sign_in", to: "sessions#new"
+  post "sign_in", to: "sessions#create"
   #Futurestudent CRUD
   get "futurestudents", to:"futurestudents#index"
   get "futurestudents/new", to:"futurestudents#new"

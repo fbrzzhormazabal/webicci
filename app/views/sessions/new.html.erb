@@ -1,0 +1,19 @@
+<h1>Login de estudiante</h1>
+
+<%= form_with url: sign_in_path do |form|%>
+
+    <div class="mb-3">
+        <%= form.label :Email %>
+        <%= form.email_field :Email, class:"form-control" , placeholder:"ejemplo@estudianteunap.com" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :Password %>
+        <%= form.password_field :Password , class:"form-control" , placeholder:"Contraseña"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit "Login de estudiante"%>
+    </div>
+
+<% end %>

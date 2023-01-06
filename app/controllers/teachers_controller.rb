@@ -11,6 +11,11 @@ class TeachersController < ApplicationController
 
     def create
         @teacher = Teacher.create(Name: params[:teacher][:Name],Mother_Name: params[:teacher][:Mother_Name],Father_Name: params[:teacher][:Father_Name],Email: params[:teacher][:Email],Run: params[:teacher][:Run],Dv: params[:teacher][:Dv],Telefono: params[:teacher][:Telefono],Year_Teacher: params[:teacher][:Year_Teacher],Birthday: params[:teacher][:Birthday],Year_Egreso: params[:teacher][:Year_Egreso],Year_Ingreso: params[:teacher][:Year_Ingreso],Password: params[:teacher][:Password])
+        if @teacher.save
+            redirect_to root_path, notice: "Registrado correctamente"
+        else 
+            render :new
+        end  
     end
 
     def show

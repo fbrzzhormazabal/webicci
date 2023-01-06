@@ -40,7 +40,10 @@
     <%= form.label :Password %>
     <%= form.password_field :Password , class:"form-control" , placeholder:"Contraseña"%>
     </div>
-        
+    <div class="mb-3">
+    <%= form.label :Password %>
+    <%= form.password_field :password_digest , class:"form-control" , placeholder:"Confirmar contraseña"%>
+    </div>
     <div class="mb-3">
     <%= form.submit %>
     </div>

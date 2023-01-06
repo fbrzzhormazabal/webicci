@@ -11,7 +11,11 @@ class GuestsController < ApplicationController
 
     def create
         @guest = Guest.create(Name: params[:guest][:Name],Email: params[:guest][:Email],Run: params[:guest][:Run],Dv: params[:guest][:Dv],Password: params[:guest][:Password])
-        redirect_to root_path
+        if @guest.save
+            redirect_to root_path, notice: "Registrado correctamente"
+        else 
+            render :new
+        end  
     end
 
     def show

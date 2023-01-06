@@ -11,6 +11,11 @@ class FuturestudentsController < ApplicationController
 
     def create
         @futurestudent = Futurestudent.create(Name: params[:futurestudent][:Name],Mother_Name: params[:futurestudent][:Mother_Name],Father_Name: params[:futurestudent][:Father_Name],Email: params[:futurestudent][:Email],Run: params[:futurestudent][:Run],Dv: params[:futurestudent][:Dv],Birthday: params[:futurestudent][:Birthday],Password: params[:futurestudent][:Password])
+        if @futurestudent.save
+            redirect_to root_path, notice: "Registrado correctamente"
+        else 
+            render :new
+        end  
     end
 
     def show

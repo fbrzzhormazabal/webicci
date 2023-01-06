@@ -46,6 +46,8 @@ gem 'devise'
 
 gem 'bootstrap', '~> 5.2.2'
 
+gem 'email_validator'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

@@ -1,4 +1,9 @@
 <div
     class="bg-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Frontis_UNAP_Iquique.JPG/1280px-Frontis_UNAP_Iquique.JPG');height: 100vh;">
 
+    <% if @student %>
+    Logged in as: <%= @student.Email%>    
+
+    <%= button_to "Logout", logout_path, method: :delete%>  
+    <% end %>
 </div>
